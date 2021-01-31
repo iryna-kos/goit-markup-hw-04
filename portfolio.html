@@ -27,8 +27,18 @@
                 </ul>
             </nav>
             <ul class="contacts">
-                <li><a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li> <a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li>
+                    <a class="mail-link link" href="mailto:info@devstudio.com"> 
+                        <svg class="mail-icon" height="12" width="16"> 
+                            <use href="./images/sprite.svg#envelope-hover"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li> 
+                    <a class="tel-link link" href="tel:+380961111111">
+                        <svg class="mail-icon" height="16" width="10"> 
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg> +38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -58,7 +68,7 @@
             <!-- <h1></h1> -->
                 <ul class="projects">
                     <li class="projects-list">  
-                        <a href=""> 
+                        <a class="projects-list-link" href=""> 
                             <img src="./images/projects-images/projects-img1.jpg" alt="project-1" height="295" width="369">
                             <div class="projects-list-box"> <h2 class="projects-list-name">Технокряк</h1>
                             <p class="projects-list-item">Веб-сайт</p> </div>
@@ -66,7 +76,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img2.jpg" alt="project-2" height="295" width="369">
                             <div class="projects-list-box"> <h2 class="projects-list-name" lang="en">Постер New Orlean vs Golden Star</h1>
                             <p class="projects-list-item">Дизайн</p> </div>
@@ -74,7 +84,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img3.jpg" alt="project-3" height="295" width="369">
                             <div class="projects-list-box"> <h2 class="projects-list-name" lang="en">Ресторан Seafood</h1>
                             <p class="projects-list-item">Приложение</p></div>
@@ -82,7 +92,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img4.jpg" alt="project-4" height="295" width="369">
                             <div class="projects-list-box"><h2 class="projects-list-name">Проект Prime</h1>
                             <p class="projects-list-item">Маркетинг</p></div>
@@ -90,7 +100,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img5.jpg" alt="project-5" height="295" width="369">
                             <div class="projects-list-box"><h2 class="projects-list-name" lang="en">Проект Boxes</h1>
                             <p class="projects-list-item">Приложение</p></div>
@@ -98,7 +108,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img6.jpg" alt="project-6" height="295" width="369">
                             <div class="projects-list-box"><h2 class="projects-list-name" lang="en">Inspiration has no Borders</h1>
                             <p class="projects-list-item">Веб-сайт</p></div>
@@ -106,7 +116,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img7.jpg" alt="project-7" height="295" width="369">
                             <div class="projects-list-box"><h2 class="projects-list-name" lang="en">Издание Limited Edition</h1>
                             <p class="projects-list-item">Дизайн</p></div>
@@ -114,7 +124,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img8.jpg" alt="project-8" height="295" width="369">
                             <div class="projects-list-box"><h2 class="projects-list-name" lang="en">Проект LAB</h1>
                             <p class="projects-list-item">Маркетинг</p> </div>
@@ -122,7 +132,7 @@
                         </a>
                     </li>
                     <li class="projects-list">
-                        <a href="">
+                        <a class="projects-list-link" href="">
                             <img src="./images/projects-images/projects-img9.jpg" alt="project-9" height="295" width="369">
                             <div class="projects-list-box"> <h2 class="projects-list-name" lang="en">Growing Business</h1>
                             <p class="projects-list-item">Приложение</p> </div>
@@ -135,6 +145,7 @@
     </main>
     <footer class="contact">
         <div class="container">
+            <div class="footer-contact">
             <a class="logo" href="/"> <span class="logo-one">Web</span><span class="logo-two-footer" >Studio</span></a>
             <address class="contact-footer">
                 <ul class="contact-footer-list">
@@ -147,6 +158,40 @@
                     <li class="contact-footer-list-item">
                         <a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
+                </div>
+                <div class="footer-social">
+                    <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer-link">
+                        <li class="footer-link-item">
+                            <a class="footer-link-item-social link" href="">
+                                <svg class="footer-link-networks">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a class="footer-link-item-social link" href="">
+                                <svg class="footer-link-networks">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>    
+                        </li>
+                        <li class="footer-link-item">
+                            <a class="footer-link-item-social link" href="">
+                                <svg class="footer-link-networks">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a class="footer-link-item-social link" href="">
+                                <svg class="footer-link-networks">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             </ul>
         </address>    

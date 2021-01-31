@@ -21,6 +21,10 @@ button {
     font-family: inherit;
 }
 
+svg {
+    fill: currentColor;
+}
+
 /* сброс */
 
 .container {
@@ -112,6 +116,10 @@ color: #000000;
     margin-right: 50px;
 }
 
+.mail-icon {
+    margin-right: 10px;
+} 
+
 /* navigation */
 .navigation-list-link {
     color: #212121;
@@ -154,7 +162,17 @@ color: #000000;
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 280px;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/main.jpg");
+    
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: auto;
     }
+    
 
 .hero .container {
     display: flex;
@@ -209,6 +227,20 @@ color: #000000;
 
 .preference-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.preference-icon {
+  fill: #212121;
+}
+
+.preference-item-box {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
 }
 
 .benefits-title {
@@ -275,6 +307,7 @@ color: #000000;
     padding-bottom: 30px;
     text-align: center;
 }
+
 .team-name {
     margin-bottom: 10px;
 }
@@ -291,7 +324,7 @@ color: #000000;
  .team-item {
     background: #FFFFFF;
     width: 270px;
-    height: 368px;
+    height: 428px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
  }
@@ -311,11 +344,87 @@ color: #000000;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.team-link-networks {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.team-link-item-social:hover .team-link-networks,
+.team-link-item-social:focus .team-link-networks {
+    fill: #FFFFFF;
+}
+
+.team-link {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-right: 32px ;
+    margin-left: 32px;
+}
+
+.team-link-item-social {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-link-item-social:hover,
+.team-link-item-social:focus {
+    background-color: #2196F3;
+}
+
+/* regular-customers */
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customers-link-icon {
+    fill: #AFB1B8;
+}
+
+.customers-link-item {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-link-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.customers-link-item:hover,
+.customers-link-item:focus {
+    border-color: #2196F3;
+}
+
+.customers-link-item:hover .customers-link-icon,
+.customers-link-item:focus .customers-link-icon {
+    fill: #2196F3;
 }
 
 /* footer */
 .contact .container {
-    display: block;
+    display: flex;
+    align-items: baseline;
 }
 
 .contact-footer-list {
@@ -353,6 +462,42 @@ text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+
+.footer-link-networks {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
+
+.footer-social {
+    margin-left: 70px;
+    display: block;
+}
+.footer-link {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-link-item {
+    margin-right: 10px;
+}
+
+
+.footer-link-item-social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link-item-social:hover, 
+.footer-link-item-social:focus {
+    background-color: #2196F3;
+ }
+ 
 
 /* portfolio-filter */
 
@@ -402,8 +547,16 @@ text-decoration: none;
 }
 
 
-/* portfolio-projects */
+.footer-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.37;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-style: normal;
+    }
 
+/* portfolio-projects */
 
 .projects {
     display: flex;
@@ -422,6 +575,11 @@ text-decoration: none;
 
 a {
     text-decoration: none;
+}
+
+.projects-list:hover,
+.projects-list:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list-name {
